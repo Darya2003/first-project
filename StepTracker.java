@@ -14,7 +14,7 @@ public class StepTracker {
         this.goalSteps = goalSteps;
         if (goalSteps > 0) {
             this.goalSteps = goalSteps;
-            System.out.println("Новая цель по количеству шагов установлена.");
+            System.out.println("Новая цель по количеству шагов.");
         } else {
             System.out.println("Введите корректное число шагов.");
         }
