@@ -14,7 +14,7 @@ public class StepTracker {
         this.goalSteps = goalSteps;
         if (goalSteps > 0) {
             this.goalSteps = goalSteps;
-            System.out.println("Новая цель по количеству шагов.");
+            System.out.println("Новая установка по количеству шагов.");
         } else {
             System.out.println("Введите корректное число шагов.");
         }
@@ -53,7 +53,7 @@ public class StepTracker {
         System.out.println("Среднее количество шагов в день в этом месяце -" + allStepsMonth / 30);
         System.out.println("Пройденная дистанция (в км) в этом месяце -" + converter.toKm(allStepsMonth));
         System.out.println("Сожжённые килокалории за месяц  -" + converter.toKiloCalorie(allStepsMonth));
-        System.out.println("Лучшая серия подряд в месяце - " + bestSeries);
+        System.out.println("Лучшая серия в месяце - " + bestSeries);
     }
 
     class MonthData {
@@ -69,7 +69,7 @@ public class StepTracker {
 
         public double toKiloCalorie(int steps) {
             int calories = steps * 50;
-            double kiloCalories = calories / 1000.0;
+            double kiloCalories = calories / 1000;
             return kiloCalories;
         }
     }
